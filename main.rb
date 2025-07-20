@@ -111,5 +111,6 @@ let aa: f32 = ((5.9*a)+(6.5*b)+(7.1*c)+(7.7*d)+(4.1*e)+(2.9*f)+(8.9*g)+(9.5*h)+(
 let bb: f32 = ((2.0*q)+(5.0*r)+(3.0*s)+(6.0*t)+(7.0*u)+(9.0*v)+(1.0*w)+(8.0*x)+(4.0*y))/90.0;
 let z: f32 = aa*bb;
 println!("Environment Score {}",z);
+println!("There should be a high/low min/max frequency of ecological forms/successions to ensure synergy.");
 println!("Press any key and enter in order to exit");
 io::stdin().read_line(&mut input_line).expect("n/a...........");
