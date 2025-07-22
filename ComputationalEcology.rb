@@ -1,7 +1,7 @@
 #formsA = ["Deep Sea", "Lakes", "Rivers", "Coasts", "Wetlands", "Desert", "Plains", "Forest", "Caves", "Tundra", "Valley", "Mountains", "Rock Formations", "Weather", "Atmospheric Optical Phenomenona", "Astronomy"];
 #formsB = [5.9, 6.5, 7.1, 7.7, 4.1, 2.9, 8.9, 9.5, 4.7, 2.3, 8.3, 5.3, 3.5, 1.7, 0.5, 1.1];
-#successionsA = ["fires", "floods", "droughts", "windstorms", "landslides", "avalanches", "volcanic eruptions", "disease epidemics", "ocean temperature changes"];
-#successionsB = [2.0, 5.0, 3.0, 6.0, 7.0, 9.0, 1.0, 8.0, 4.0];
+#successionsA = ["fires", "floods", "droughts", "windstorms", "landslides", "avalanches", "volcanic eruptions", "disease epidemics", "ocean temperature changes", "food scarcity"];
+#successionsB = [1.5, 4.5, 5.5, 2.5, 5.5, 9.5, 0.5, 8.5, 3.5, 7.5];
 
 
 puts "Deep Sea"
@@ -82,10 +82,13 @@ x = Float(input_line) rescue (raise "Input not a float")
 puts "ocean temperature changes"
 input_line = gets.chomp
 y = Float(input_line) rescue (raise "Input not a float")
+puts "food limitations"
+input_line = gets.chomp
+z = Float(input_line) rescue (raise "Input not a float")
 
 aa  = ((5.9*a)+(6.5*b)+(7.1*c)+(7.7*d)+(4.1*e)+(2.9*f)+(8.9*g)+(9.5*h)+(4.7*i)+(2.3*j)+(8.3*k)+(5.3*l)+(3.5*m)+(1.7*n)+(0.5*o)+(1.1*p))/160.0
-bb = ((2.0*q)+(5.0*r)+(3.0*s)+(6.0*t)+(7.0*u)+(9.0*v)+(1.0*w)+(8.0*x)+(4.0*y))/90.0
-z = aa * bb
+bb = ((1.5*q)+(4.5*r)+(2.5*s)+(5.5*t)+(6.5*u)+(9.5*v)+(0.5*w)+(8.5*x)+(3.5*y)+(7.5*z))/90.0
+cc = aa * bb
 puts "Environment Score #{z}"
 puts "There should be a high/low min/max frequency of ecological forms/successions to ensure synergy."
 puts "Press any key and enter in order to exit"
