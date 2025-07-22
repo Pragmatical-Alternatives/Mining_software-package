@@ -3,114 +3,90 @@
 //let successionsA: [&str; 9] = ["fires", "floods", "droughts", "windstorms", "landslides", "avalanches", "volcanic eruptions", "disease epidemics", "ocean temperature changes"];
 //let successionsB: [f32; 9] = [2.0, 5.0, 3.0, 6.0, 7.0, 9.0, 1.0, 8.0, 4.0];
 
-println!("Rate forms by frequency from 0.0 to 10.0:");
-println!("Deep Sea");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let a: f32 = input_line.trim().parse().expect("Input not an float");
-println!("Lakes");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let b: f32 = input_line.trim().parse().expect("Input not an float");
-println!("Rivers");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let c: f32 = input_line.trim().parse().expect("Input not an float");
-println!("Coasts");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let d: f32 = input_line.trim().parse().expect("Input not an float");
-println!("Wetlands");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let e: f32 = input_line.trim().parse().expect("Input not an float");
-println!("Desert");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let f: f32 = input_line.trim().parse().expect("Input not an float");
-println!("Plains");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let g: f32 = input_line.trim().parse().expect("Input not an float");
-println!("Forest");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let h: f32 = input_line.trim().parse().expect("Input not an float");
-println!("Caves");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let i: f32 = input_line.trim().parse().expect("Input not an float");
-println!("Tundra");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let j: f32 = input_line.trim().parse().expect("Input not an float");
-println!("Valley");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let k: f32 = input_line.trim().parse().expect("Input not an float");
-println!("Mountains");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let l: f32 = input_line.trim().parse().expect("Input not an float");
-println!("Rock Formations");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let m: f32 = input_line.trim().parse().expect("Input not an float");
-println!("Weather");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let n: f32 = input_line.trim().parse().expect("Input not an float");
-println!("Atmospheric Optical Phenomenona");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let o: f32 = input_line.trim().parse().expect("Input not an float");
-println!("Astronomy");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let p: f32 = input_line.trim().parse().expect("Input not an float");
 
-println!("Rate succession frequencies:");
-println!("fires");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let q: f32 = input_line.trim().parse().expect("Input not an float");
-println!("floods");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let r: f32 = input_line.trim().parse().expect("Input not an float");
-println!("droughts");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let s: f32 = input_line.trim().parse().expect("Input not an float");
-println!("windstorms");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let t: f32 = input_line.trim().parse().expect("Input not an float");
-println!("landslides");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let u: f32 = input_line.trim().parse().expect("Input not an float");
-println!("avalanches");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let v: f32 = input_line.trim().parse().expect("Input not an float");
-println!("volcanic eruptions");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let w: f32 = input_line.trim().parse().expect("Input not an float");
-println!("disease epidemics");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let x: f32 = input_line.trim().parse().expect("Input not an float");
-println!("ocean temperature changes");
-let mut input_line = String::new();
-io::stdin().read_line(&mut input_line).expect("Failed to read line");
-let y: f32 = input_line.trim().parse().expect("Input not an float");
+puts "Deep Sea"
+input_line = gets.chomp
+a = Float(input_line) rescue (raise "Input not a float")
+puts "Lakes"
+input_line = gets.chomp
+b = Float(input_line) rescue (raise "Input not a float")
+puts "Rivers"
+input_line = gets.chomp
+c = Float(input_line) rescue (raise "Input not a float")
+puts "Coasts"
+input_line = gets.chomp
+d = Float(input_line) rescue (raise "Input not a float")
+puts "Wetlands"
+input_line = gets.chomp
+e = Float(input_line) rescue (raise "Input not a float")
+puts "Desert"
+input_line = gets.chomp
+f = Float(input_line) rescue (raise "Input not a float")
+puts "Plains"
+input_line = gets.chomp
+g = Float(input_line) rescue (raise "Input not a float")
+puts "Forest"
+input_line = gets.chomp
+h = Float(input_line) rescue (raise "Input not a float")
+puts "Caves"
+input_line = gets.chomp
+i = Float(input_line) rescue (raise "Input not a float")
+puts "Tundra"
+input_line = gets.chomp
+j = Float(input_line) rescue (raise "Input not a float")
+puts "Valley"
+input_line = gets.chomp
+k = Float(input_line) rescue (raise "Input not a float")
+puts "Mountains"
+input_line = gets.chomp
+l = Float(input_line) rescue (raise "Input not a float")
+puts "Rock Formations"
+input_line = gets.chomp
+m = Float(input_line) rescue (raise "Input not a float")
+puts "Weather"
+input_line = gets.chomp
+n = Float(input_line) rescue (raise "Input not a float")
+puts "Atmospheric Optical Phenomenona"
+input_line = gets.chomp
+o = Float(input_line) rescue (raise "Input not a float")
+puts "Astronomy"
+input_line = gets.chomp
+p = Float(input_line) rescue (raise "Input not a float")
 
-let aa: f32 = ((5.9*a)+(6.5*b)+(7.1*c)+(7.7*d)+(4.1*e)+(2.9*f)+(8.9*g)+(9.5*h)+(4.7*i)+(2.3*j)+(8.3*k)+(5.3*l)+(3.5*m)+(1.7*n)+(0.5*o)+(1.1*p))/160.0;
-let bb: f32 = ((2.0*q)+(5.0*r)+(3.0*s)+(6.0*t)+(7.0*u)+(9.0*v)+(1.0*w)+(8.0*x)+(4.0*y))/90.0;
-let z: f32 = aa*bb;
-println!("Environment Score {}",z);
-println!("There should be a high/low min/max frequency of ecological forms/successions to ensure synergy.");
-println!("Press any key and enter in order to exit");
-io::stdin().read_line(&mut input_line).expect("n/a...........");
+
+puts "Rate succession frequencies:");
+puts "fires"
+input_line = gets.chomp
+q = Float(input_line) rescue (raise "Input not a float")
+puts "floods"
+input_line = gets.chomp
+r = Float(input_line) rescue (raise "Input not a float")
+puts "droughts"
+input_line = gets.chomp
+s = Float(input_line) rescue (raise "Input not a float")
+puts "windstorms"
+input_line = gets.chomp
+t = Float(input_line) rescue (raise "Input not a float")
+puts "landslides"
+input_line = gets.chomp
+u = Float(input_line) rescue (raise "Input not a float")
+puts "avalanches"
+input_line = gets.chomp
+v = Float(input_line) rescue (raise "Input not a float")
+puts "volcanic eruptions"
+input_line = gets.chomp
+w = Float(input_line) rescue (raise "Input not a float")
+puts "disease epidemics"
+input_line = gets.chomp
+x = Float(input_line) rescue (raise "Input not a float")
+puts "ocean temperature changes"
+input_line = gets.chomp
+y = Float(input_line) rescue (raise "Input not a float")
+
+aa  = ((5.9*a)+(6.5*b)+(7.1*c)+(7.7*d)+(4.1*e)+(2.9*f)+(8.9*g)+(9.5*h)+(4.7*i)+(2.3*j)+(8.3*k)+(5.3*l)+(3.5*m)+(1.7*n)+(0.5*o)+(1.1*p))/160.0
+bb = ((2.0*q)+(5.0*r)+(3.0*s)+(6.0*t)+(7.0*u)+(9.0*v)+(1.0*w)+(8.0*x)+(4.0*y))/90.0
+z = aa * bb
+puts "Environment Score #{z}"
+puts "There should be a high/low min/max frequency of ecological forms/successions to ensure synergy."
+puts "Press any key and enter in order to exit"
+gets.chomp
